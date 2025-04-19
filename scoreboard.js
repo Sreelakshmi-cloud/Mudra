@@ -99,4 +99,22 @@ const leaderboardData = [
 function goBack() {
     window.history.back();
   }
-  
+
+let lastScrollPosition = 0;
+const backButton = document.querySelector('.back-button');
+
+window.addEventListener('scroll', () => {
+  const currentScrollPosition = window.scrollY;
+
+  if (currentScrollPosition > lastScrollPosition) {
+    // Scrolling down
+    backButton.style.opacity = '0';
+    backButton.style.pointerEvents = 'none'; // Prevent interaction when hidden
+  } else {
+    // Scrolling up
+    backButton.style.opacity = '1';
+    backButton.style.pointerEvents = 'auto';
+  }
+
+  lastScrollPosition = currentScrollPosition;
+});
