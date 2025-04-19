@@ -60,7 +60,7 @@ body {
   
   .back-button {
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 20px;
     background: linear-gradient(135deg, #2c1a0b, #601d15);
     color: #f3e5ab;
