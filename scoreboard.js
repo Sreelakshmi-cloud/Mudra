@@ -96,7 +96,7 @@ const leaderboardData = [
     plugins: [glowPlugin]
   });
   
-  function goBack() {
+function goBack() {
     window.history.back();
   }
   
