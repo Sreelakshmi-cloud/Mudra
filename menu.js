@@ -2,7 +2,7 @@ function navigateTo(page) {
     window.location.href = page;
   }
   
-  function goBack() {
+function goBack() {
     window.history.back();
   }
   
