@@ -13,15 +13,15 @@ const leaderboardData = [
   ];
   
   // Populate scoreboard table
-  const tableBody = document.querySelector('#scoreTable tbody');
-  leaderboardData.forEach(item => {
+  const tableBody = document.querySelector('#leaderboard-body'); // Corrected ID
+  leaderboardData.forEach((item, index) => {
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${item.department}</td><td>${item.score}</td>`;
+    row.innerHTML = `<td>${index + 1}</td><td>${item.department}</td><td>${item.score}</td>`;
     tableBody.appendChild(row);
   });
   
   // Render chart
-  const ctx = document.getElementById('scoreChart').getContext('2d');
+  const ctx = document.getElementById('leaderboardChart').getContext('2d'); // Corrected ID
   
   const barColors = [
     'rgba(255, 193, 7, 0.9)',   // CSE - Amber
@@ -78,4 +78,3 @@ const leaderboardData = [
       }
     }
   });
-  
