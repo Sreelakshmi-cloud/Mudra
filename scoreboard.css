@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0c0b0b, #1e1a17);
+    color: #f8f8f8;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #f2c94c;
+    margin: 0;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #ffa726;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .leaderboard h2 {
+    text-align: center;
+    color: #ffcc70;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+    color: #aaa;
+  }
+  
+  .chart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #2c1a0b, #601d15);
+    color: #f3e5ab;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, opacity 0.3s; /* Added opacity transition */
+    z-index: 1000;
+  }
+  
+  .back-button:hover {
+    background: linear-gradient(135deg, #401b0e, #8a120b);
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 100, 0, 0.6);
+  }

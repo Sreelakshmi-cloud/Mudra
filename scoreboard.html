@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mudra 2025 Leaderboard</title>
+  <link rel="stylesheet" href="scoreboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <button class="back-button" onclick="goBack()">← Back</button>
+
+  <header>
+    <h1>Mudra 2025</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Leaderboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="leaderboard">
+      <h2>Leaderboard</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Department</th>
+            <th>Scores</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+
+      <div class="chart-container">
+        <canvas id="leaderboardChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mudra • Last updated: April 20, 2025</p>
+  </footer>
+
+  <script src="scoreboard.js"></script>
+</body>
+</html>

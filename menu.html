@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width"/>
+  <title>Mudra - Navigation</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  <!-- Back Button in Top-Left -->
+  <button class="back-button" onclick="goBack()">⬅ Back</button>
+
+  <div class="hero">
+    <img src="images/mudra1.jpg" alt="Menu Background" class="background-img" />
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="main-title">Mudra 2025</h1>
+      <p class="subtitle">Eventify Presents</p>
+      
+      <div class="button-grid">
+        <button class="nav-button" onclick="navigateTo('events.html')">Events</button>
+        <button class="nav-button" onclick="navigateTo('registration.html')">Registration</button>
+        <button class="nav-button" onclick="navigateTo('scoreboard.html')">Score Board</button>
+        <button class="nav-button" onclick="navigateTo('sponsors.html')">Stalls & Sponsors</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
