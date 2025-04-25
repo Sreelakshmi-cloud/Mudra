@@ -11,4 +11,4 @@ document.getElementById('adminLoginForm').addEventListener('submit', function (e
       document.getElementById('loginError').textContent = 'Invalid username or password';
     }
   });
-  
+
