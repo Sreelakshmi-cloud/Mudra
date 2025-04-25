@@ -1,20 +1,15 @@
+const functions = require("firebase-functions");
 
-require('dotenv').config(); 
-
-// Load environment variables
-
-// Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.FIREBASE_DATABASE_URL,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
-  measurementId: process.env.FIREBASE_MEASUREMENT_ID
+  apiKey: functions.config().app.firebase_api_key,
+  authDomain: functions.config().app.firebase_auth_domain,
+  databaseURL: functions.config().app.firebase_database_url,
+  projectId: functions.config().app.firebase_project_id,
+  storageBucket: functions.config().app.firebase_storage_bucket,
+  messagingSenderId: functions.config().app.firebase_messaging_sender_id,
+  appId: functions.config().app.firebase_app_id,
+  measurementId: functions.config().app.firebase_measurement_id,
 };
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
