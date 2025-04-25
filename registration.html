@@ -3,17 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Registration - Mudra</title>
-  <link rel="stylesheet" href="registration.css" />
+  <title>Arts Festival Registration</title>
+  <link rel="stylesheet" href="registration.css">
 </head>
 <body>
-    <button class="back-button" onclick="goBack()">← Back</button>
-  <div class="container">
-    <h1 class="main-title">Registration</h1>
-    <p class="subtitle">Secure your spot at Mudra 2025!</p>
-    <button class="nav-button" onclick="openRegistration()">Open Registration Link</button>
-  </div>
 
-  <script src="registration.js"></script>
+  <button class="back-button" onclick="history.back()">← Back</button>
+
+  <div class="container">
+    <div class="main-title">Mudra Registration</div>
+    <div class="subtitle">Join the celebration – choose your event!</div>
+
+    <form id="registrationForm">
+      <input type="text" name="name" placeholder="Full Name" required />
+
+      <select name="year" required>
+        <option value="" disabled selected>Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+
+      <select name="department" required>
+        <option value="" disabled selected>Select Department</option>
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ME</option>
+        <option>CE</option>
+        <option>EEE/EL</option>
+        <option>SF</option>
+        <option>RA</option>
+        <option>ECE</option>
+        <option>MBA</option>
+      </select>
+
+      <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9]{10}" required />
+
+      <select name="event" required>
+        <option value="" disabled selected>Select Event</option>
+        <option>Oppana</option>
+        <option>Mime</option>
+        <option>Thiruvathira</option>
+        <option>Western Solo</option>
+        <option>Group Dance</option>
+        <option>Mono Act</option>
+        <option>Western Group</option>
+        <option>Freestyel</option>
+        <option>Bharatanatyam</option>
+        <option>Light Music</option>
+        <option>Classical Music</option>
+        <option>Nadan Pattu</option>
+      </select>
+
+      <button type="submit" class="nav-button">Submit Registration</button>
+      <div id="successMessage" class="success-message"></div>
+    </form>
+  </div>
 </body>
+<script src="registration.js"></script>
 </html>

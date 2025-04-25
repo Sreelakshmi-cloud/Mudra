@@ -1,8 +1,11 @@
-function openRegistration() {
-    // Replace the link below with your actual registration form URL
-    window.open("https://docs.google.com/forms/d/1CoIn_v1YnU7WhN9CMYU2KZEH4PvFtskQTHNK669ExNQ/edit", "_blank");
-  }
+const form = document.getElementById("registrationForm");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  successMessage.textContent = "🎉 Registration Successful!";
+  form.reset();
+});
 function goBack() {
-    window.history.back();
-  }
-  
+  window.history.back();
+}
